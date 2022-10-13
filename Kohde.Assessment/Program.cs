@@ -175,6 +175,7 @@ namespace Kohde.Assessment
 
 
             const string abc = "asduqwezxc";
+
             foreach (var vowel in abc.SelectOnlyVowels())
             {
                 Console.WriteLine("{0}", vowel);
