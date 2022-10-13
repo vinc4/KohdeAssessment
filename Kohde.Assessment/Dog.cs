@@ -1,14 +1,19 @@
-﻿namespace Kohde.Assessment
+﻿using System.Xml.Linq;
+
+namespace Kohde.Assessment
 {
-    public class Dog
+    public class Dog : CombinedAnima
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
         public string Food { get; set; }
 
-        public string GetDetails()
+        public override string GetDetails()
         {
-            return "Name: " + Name + "Age: " + Age;
+            return this.ToString();
+        }
+
+        public override string ToString()
+        {
+            return "Name: " + Name + "Age: " + Age + " Food: " + Food;
         }
     }
 }

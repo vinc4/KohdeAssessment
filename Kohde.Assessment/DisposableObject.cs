@@ -37,10 +37,10 @@ namespace Kohde.Assessment
         {
             if (disposing)
             {
-                // Dispose managed resources
+                Counter = 1;
             }
 
-            // Free native resources
+            SomethingHappened = null;
         }
 
         public void Dispose()

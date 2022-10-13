@@ -1,14 +1,17 @@
 ﻿namespace Kohde.Assessment
 {
-    public class Cat
+    public class Cat : CombinedAnima
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
         public string Food { get; set; }
 
-        public string GetDetails()
+        public override string GetDetails()
         {
-            return "Name: " + Name + "Age: " + Age;
+            return this.ToString();
+        }
+
+        public override string ToString()
+        {
+            return "Name: " + this.Name + " Age: " + this.Age + " Food: " + this.Food;
         }
     }
 }

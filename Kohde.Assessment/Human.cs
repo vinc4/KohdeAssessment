@@ -1,14 +1,17 @@
 ﻿namespace Kohde.Assessment
 {
-    public class Human
+    public class Human : CombinedAnima
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
         public string Gender { get; set; }
 
-        public string GetDetails()
+        public override string ToString()
         {
-            return "Name: " + Name + "Age: " + Age;
+            return "Name: " + Name + "Age: " + Age + " Gender" + Gender;
+        }
+
+        public override string GetDetails()
+        {
+            return this.ToString();
         }
     }
 }
